@@ -45,6 +45,7 @@ LANGUAGE ~Deutsch~  ~german~  ~fadingpromises/german/setup-fadingpromises.tra~
 LANGUAGE ~Italiano~ ~italian~  ~fadingpromises/italian/setup-fadingpromises.tra~
 LANGUAGE ~Russian~ ~russian~  ~fadingpromises/russian/setup-fadingpromises.tra~
 LANGUAGE ~Francais~ ~french~  ~fadingpromises/french/setup-fadingpromises.tra~
+LANGUAGE ~Chinese~ ~schinese~  ~fadingpromises/schinese/setup-fadingpromises.tra~
 
 BEGIN @0
 
