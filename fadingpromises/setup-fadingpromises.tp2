@@ -22,7 +22,7 @@ ALWAYS
       OUTER_SPRINT name_source ~bg2_chapter_%i%~
       OUTER_SET EVAL ~%name_source%~ = bg2_chapter
     END
-
+  ACTION_DEFINE_ARRAY charsetsNoconvertArray BEGIN install END    
   ACTION_DEFINE_ARRAY charsetsReloadArray BEGIN setup-fadingpromises END
 
     LAF ~HANDLE_CHARSETS~
@@ -30,6 +30,7 @@ ALWAYS
         infer_charsets = 1
       STR_VAR
         tra_path = EVAL ~%MOD_FOLDER%~
+		noconvert_array = charsetsNoconvertArray
         reload_array = charsetsReloadArray
     END
     LOAD_TRA ~fadingpromises/%LANGUAGE%/setup-fadingpromises-ee.tra~
@@ -45,6 +46,7 @@ LANGUAGE ~Deutsch~  ~german~  ~fadingpromises/german/setup-fadingpromises.tra~
 LANGUAGE ~Italiano~ ~italian~  ~fadingpromises/italian/setup-fadingpromises.tra~
 LANGUAGE ~Russian~ ~russian~  ~fadingpromises/russian/setup-fadingpromises.tra~
 LANGUAGE ~Francais~ ~french~  ~fadingpromises/french/setup-fadingpromises.tra~
+LANGUAGE ~Simplified Chinese By Archenemy~ ~schinese~ ~fadingpromises/schinese/setup-fadingpromises.tra~ ~fadingpromises/schinese/install.tra~
 
 BEGIN @0
 
